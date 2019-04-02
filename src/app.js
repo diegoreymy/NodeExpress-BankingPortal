@@ -37,5 +37,5 @@ app.get('/profile', (req, res) => {
 process.env.PORT = process.env.PORT || 3000; // Si existe un puerto en el process enviroment usa ese, si no, usa el 3000.
 
 app.listen(process.env.PORT, () => {
-    console.log('PS Project Running on port 3000!');
+    console.log(`PS Project Running on port ${process.env.PORT}!`);
 });
