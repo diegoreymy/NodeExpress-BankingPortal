@@ -31,11 +31,8 @@ app.get('/profile', (req, res) => {
     });
 });
 
-// ============================
-//  Puerto
-// ============================
-process.env.PORT = process.env.PORT || 3000; // Si existe un puerto en el process enviroment usa ese, si no, usa el 3000.
+const port = process.env.PORT || 3000; // Si existe un puerto en el process enviroment usa ese, si no, usa el 3000.
 
-app.listen(process.env.PORT, () => {
+app.listen(port, () => {
     console.log(`PS Project Running on port ${process.env.PORT}!`);
 });
